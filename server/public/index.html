@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,37 @@
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-    <h1>YOUR GAME HERE!</h1>
+  <h1>THE BEST Random Number Guessing Game</h1>
+
+  <main>
+    <h2> Enter Your Guesses Here!</h2>
+    <form>
+      <input type="number" placeholder="Player 1" id="player1Guess">
+      <input type="number" placeholder="Player 2" id="player2Guess">
+      <input type="number" placeholder="Player 3" id="player3Guess">
+      <button id="submitBtn">Submit</button>
+    </form>
+
+    <section>
+      <h1>Total Guesses: <span id="guessTotal"></span></h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Player</th>
+            <th>Guess</th>
+            <th>Hint</th>
+          </tr>
+        </thead>
+        <tbody id="guessTable">
+          <!-- This is where guesses go! -->
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+ 
 </body>
+
 </html>
